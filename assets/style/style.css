@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --primary-color: rgba(174, 11, 5, 1);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+#helsingborg{
+
+}
+
+#front-page{
+    display: fixed;
+    top:0;
+    right:0;
+    left: 0;
+    z-index: 100;
+    background-image: url('/assets/images/background-image.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+#logo{
+    position: absolute;
+    
+}
+
+#accept-cookie{
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+#accept-cookie.accepted {
+    display: none;
+}
+#accept-cookie__container{
+    position: relative;
+
+}
+
+.accept-cookie__content{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.accept-cookie__text{
+    width: 80%;
+    font-size: 16px;
+}
+
+.accept-cookie__buttons{
+    flex:1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn{
+    border: 1px solid rgba(0, 0, 0,0.2);
+    cursor: pointer;
+    min-width: 120px;
+    padding: 5px 15px;
+    border-radius:5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0,0.2);
+    text-align: center;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background-color: lightblue;
+}
+
