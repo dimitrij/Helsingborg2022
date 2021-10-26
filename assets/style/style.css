@@ -24,6 +24,7 @@ html,body{
     top:0;
     right:0;
     left: 0;
+    bottom:0;
     z-index: 100;
     background-image: url('/assets/images/background-image.jpg');
     background-position: right center;
@@ -56,6 +57,11 @@ html,body{
 }
 #helsingborg.accepted #accept-cookie {
     display: none;
+}
+#helsingborg.accepted #front-page {
+    height: 300px;
+    top:0;
+    
 }
 #helsingborg.accepted #logo {
     top: 20%;
