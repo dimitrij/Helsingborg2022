@@ -24,34 +24,51 @@ html,body{
     top:0;
     right:0;
     left: 0;
+    bottom:0;
     z-index: 100;
     background-image: url('/assets/images/background-image.jpg');
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
 }
 
 
 #logo{
     position: absolute;
-    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width:50px;
+    height: 50px;    
+    cursor: pointer;
 }
 
 #accept-cookie{
     background-color: white;
     position: absolute;
-    bottom:0;
+    top:0;
+    transform: translateY(-100%);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s;
+    transition: all 0.5s;
+    z-index: 1;
 }
-#accept-cookie.accepted {
+#helsingborg.accepted #accept-cookie {
     display: none;
 }
-#accept-cookie__container{
-    position: relative;
+#helsingborg.accepted #front-page {
+    height: 300px;
+    top:0;
+    
+}
+#helsingborg.accepted #logo {
+    top: 20%;
 
+
+}
+#accept-cookie__container{
 }
 
 .accept-cookie__content{
