@@ -126,17 +126,12 @@ html,body{
     min-height:300px;
 }
 #content{
-    height: 200vh;
+    min-height: 200vh;
+    padding: 40px 0;
 }
 #event{
     background-color:lightcyan;
     min-height:1200px;
-}
-#genvägar{
-    background-color:lightgreen;
-    min-height:300px;
-
-
 }
 
 #genvagar_wrapper{
@@ -152,12 +147,18 @@ html,body{
     font-weight: 600;
     padding: 15px 10px;
     border-bottom:1px solid rgba(0, 0, 0,0.2);
+    background-color:var(--primary-color);
+    border-top-right-radius:12px ;
+    border-top-left-radius:12px ;
+    color: white;
 }
 .container{
     padding: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around
+    justify-content:space-around;
+    border:1px solid rgba(0, 0, 0,0.2);
+
 }
 .btn-genvag{
     min-width: auto;
