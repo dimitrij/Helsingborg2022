@@ -179,3 +179,84 @@ html,body{
 .text{
     text-align: center;
 }
+.navigation-menu {
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 4.5rem 0;
+    padding-top: 4.5rem;
+    padding-right: 0px;
+    padding-bottom: 4.5rem;
+    padding-left: 0px;
+    background-color: white;
+
+}
+
+.con-navigation-menu {
+    background: var(--primary-color);
+    border-radius: 5px;
+    list-style: none;
+    width: calc(32.33333% - 1.666667rem);
+    margin: .75rem 1rem;
+    padding: 1.8rem 1.6rem 1.6rem;
+    box-sizing: border-box;
+    position: relative;
+        
+}
+
+.con-navigation-menu a {
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.con-navigation-menu_description {
+        font-size: 1rem;
+        margin-top: .5rem!important;
+        line-height: 1.6;
+        color: white;
+}
+.con-navigation-menu_heading {
+    word-break: break-word;
+    -webkit-box-direction: normal;
+    font-style: normal;
+    line-height: 1.125;
+}
+.con-navigation-menu_heading a:hover {
+    text-decoration: underline;
+}
+  
+
+a:link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:visited {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    color: white;
+}
