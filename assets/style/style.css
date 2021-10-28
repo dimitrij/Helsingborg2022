@@ -178,13 +178,14 @@ box-shadow: 2mm;
     transform-style: preserve-3d;
     animation: animate 20s linear infinite;
 }
+
 .menubar_container{
     float: right;
     position: relative;
-
 }
 
 .menubar{
+    margin-top: 30px;
     font-size: 34px;
     cursor: pointer;
 }
@@ -193,13 +194,13 @@ box-shadow: 2mm;
 }
 .dropdown{
     position: absolute;
-    top: 30px;
+    top: 50px;
     right:0;
     width: 300px;
     display: none;
     list-style-type: none;
     background-color:var(--primary-color);
-
+    z-index: 100;
 
 }
 .dropdown li{
@@ -209,7 +210,6 @@ box-shadow: 2mm;
 .menubar-item-links
 {
     display: block;
-    text-align: center;
     width: 100%;
     color: white;   
     padding: 20px;
@@ -356,7 +356,7 @@ box-shadow: 2mm;
 #genvagar_wrapper{
     position: -webkit-sticky;
     position: sticky;
-    top:0;
+    top:30px;
 }
 .heading{
     display: flex;
@@ -453,7 +453,6 @@ box-shadow: 2mm;
 
 a:link {
     text-decoration: none;
-    color: var(--primary-color);
 }
 a:visited {
     text-decoration: none;
