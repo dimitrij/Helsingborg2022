@@ -3,7 +3,9 @@
     --primary-color: rgba(174, 11, 5, 1);
 
 }
-
+a{
+    text-decoration: none;
+}
 *{
     padding: 0;
     margin: 0;
@@ -39,12 +41,55 @@ html,body{
 
 #logo{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    width:50px;
-    height: 50px;    
+    left: 45%;
+    top: 400px;
     cursor: pointer;
+    width: 150px;
+    height: 150px; 
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+
+#logo:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+
+}
+
+
+@keyframes animate {
+    0%{
+        transform: perspective(1000px) rotateY(0deg) ;
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+    
+    
+}
+#logo span,
+.logo span{
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+transform-origin: center;
+transform-style: preserve-3d;
+transform:rotateY(calc(var(--i)* 90deg))translateZ(40.2px);
+}
+
+#logo span img,
+.logo span img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+box-shadow: 2mm;
+
 }
 
 #accept-cookie{
@@ -59,11 +104,12 @@ html,body{
 #helsingborg.accepted #accept-cookie {
     display: none;
 }
-
-
 #helsingborg.accepted #logo {
-    top:10%;
+    top: 20px;
+    
 }
+
+
 
 #accept-cookie__container{
 }
@@ -113,8 +159,60 @@ html,body{
 
 
 #header{
+    min-height:200px;
+}
+.header_container{
+    position: relative;
+}
+.logo_container{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    overflow: hidden;
+    width: 300px;
+}
+.logo{
+    cursor: pointer;
+    width: 150px;
+    height: 150px; 
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+.menubar_container{
+    float: right;
+    position: relative;
+
+}
+
+.menubar{
+    font-size: 34px;
+    cursor: pointer;
+}
+.menubar.open ~.dropdown{
+    display: block;
+}
+.dropdown{
+    position: absolute;
+    top: 30px;
+    right:0;
+    width: 300px;
+    display: none;
+    list-style-type: none;
     background-color:var(--primary-color);
-    min-height:100px;
+
+
+}
+.dropdown li{
+    display: block;
+    margin: 10px 0;
+}
+.menubar-item-links
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: white;   
+    padding: 20px;
 }
 
 #slider1{

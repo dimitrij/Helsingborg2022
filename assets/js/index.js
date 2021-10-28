@@ -37,3 +37,7 @@ logo.addEventListener('click', () => {
 
 
 
+//menubar
+document.querySelector(".menubar").addEventListener("click", function () {
+    document.querySelector(".menubar").classList.toggle('open')
+})
