@@ -137,7 +137,9 @@ html,body{
 #genvagar_wrapper{
     position: -webkit-sticky;
     position: sticky;
-    top:0;
+    top:40px;
+transition: all 0.5s;
+
 }
 .heading{
     display: flex;
