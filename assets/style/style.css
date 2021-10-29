@@ -157,16 +157,29 @@ box-shadow: 2mm;
     display: none;
 }
 
-
-#header{
-    min-height:200px;
+header.follow{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    height: 80px;
 }
-.header_container{
+header.follow .logo_container {
+    display: none;
+}
+header{
     position: relative;
+    background-color:white;
+    height:150px;
+    transition: all 0.3s ;
+    
+    
 }
 .logo_container{
     position: absolute;
-    top: 50%;
+    top:10%;
     left: 45%;
     overflow: hidden;
     width: 300px;
@@ -185,7 +198,6 @@ box-shadow: 2mm;
 }
 
 .menubar{
-    margin-top: 30px;
     font-size: 34px;
     cursor: pointer;
 }
@@ -199,11 +211,14 @@ box-shadow: 2mm;
     width: 300px;
     display: none;
     list-style-type: none;
-    background-color:var(--primary-color);
+    background-color:white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
     z-index: 100;
 
 }
 .dropdown li{
+    width: 100%;
+
     display: block;
     margin: 10px 0;
 }
@@ -211,13 +226,141 @@ box-shadow: 2mm;
 {
     display: block;
     width: 100%;
-    color: white;   
+    color: var(--primary-color);   
     padding: 20px;
 }
+.menubar-item-links:hover,
+.language:hover{
+    color: white;   
+    background-color:var(--primary-color);
 
+}
+.header-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+}
+.search-box{
+    margin-right: 30px;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{  
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #fdfafa;
+    padding-right: 40px;
+    color:black;
+  }
+  .input-search::placeholder{
+    color:black;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    background-color:transparent;
+    pointer-events: painted; 
+    /* background-image: url("../images/search-icon4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+  }
+
+        .search-icon{
+
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 10px;
+            left: 10px;
+        }
+
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid black;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .search-lang{
+    display: inline-flex;
+    width: 100%;
+    
+}
+
+.language-dropdown {
+    position: relative;
+    width: 150px;
+    margin-left: 30px;
+}
+.language-dropdown-title{
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+
+.language-dropdown:hover .language-list{
+    display: block;
+   
+    
+}
+.language-list{
+    display: none;
+    position: absolute;
+    top: 50%;
+    list-style: none;
+    z-index: 100;
+    background-color: white;
+    width: 150px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+
+}
+
+.language{
+    padding: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+
+    
+}
+
+header{
+    margin-bottom: 40px;
+}
+
+/* Slider 1 */
 #slider1{
+    padding-top: 40px;
     min-height:300px;
-    margin: 40px auto;
 }
 .slideshow-container {
     width: 100%;
@@ -458,23 +601,10 @@ a:visited {
     text-decoration: none;
 }
 
-ul {
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 a {
     color: white;
 }
+
+
+
+

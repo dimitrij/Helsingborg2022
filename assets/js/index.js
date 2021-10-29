@@ -8,6 +8,7 @@ const mainPage = $('#main')
 const logo = $('#logo')
 const acceptBtn = $('.btn-accept')
 const policyBtn = $('.btn-policy')
+const header = $('header')
 const COOKIE_ACCEPTED = "cookie_accepted"
 let acceptedCookie = localStorage.getItem(COOKIE_ACCEPTED) || ""
 
@@ -34,7 +35,14 @@ logo.addEventListener('click', () => {
     mainPage.style.display = 'block'
 })
 
+window.onscroll = () => {
+    if(window.scrollY >=200){
+        header.classList.add('follow')
+    }else{
+        header.classList.remove('follow')
 
+    }
+}
 
 
 //menubar
@@ -67,3 +75,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
+
+
