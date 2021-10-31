@@ -336,12 +336,12 @@ header{
 .language-list{
     display: none;
     position: absolute;
-    top: 50%;
+    top: 20%;
     list-style: none;
     z-index: 100;
-    background-color: white;
+    background-color: #aaeded2e;
     width: 150px;
-    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    box-shadow: 0 14px 10px rgba(0,0,0, 0.3);
 
 }
 
