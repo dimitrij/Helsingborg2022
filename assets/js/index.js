@@ -16,6 +16,7 @@ let acceptedCookie = localStorage.getItem(COOKIE_ACCEPTED) || ""
 //Click on logo , show up accept cookie
 
 window.onload = () => {
+
     if (acceptedCookie != '') {
         helsingborgMain.classList.add('accepted')
 
