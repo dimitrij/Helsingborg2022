@@ -172,7 +172,7 @@ html,body{
 }
 
 #footer{
-    background-color:white
+    background-color:white;
     min-height:400px;
     border: 1px solid rgba(0, 0, 0,0.2);
 
@@ -194,7 +194,7 @@ html,body{
 }
 .öppetider{
     font-weight: bold;
-    max-width: 30%;
+    width: 30%;
     margin-top: 0;
     margin-left: auto;
     border-left: 2px solid var(--color-mono-lighter,#e5e5e5);
@@ -208,6 +208,10 @@ html,body{
 .avvikandeöppetider{
     text-decoration: underline;
     color: rgba(174, 11, 5, 1);
+}
+
+.kontaktinfor-container{
+    padding: 20px;
 }
 .meny-kontakt{
 display: flex;
@@ -227,6 +231,14 @@ background-color: white;
     position: relative;
     border-spacing: 15px ;
     border-collapse: separate;
+    padding: 40px 20px ;
+    margin: 0 10px;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
+}
+
+.öppetider-container{
+    display: flex;
 }
 .meny-klick a {
     text-decoration: none;
