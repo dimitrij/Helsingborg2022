@@ -492,10 +492,179 @@ header{
     padding: 40px 0;
 }
 #event{
-    background-color:lightcyan;
     min-height:1200px;
 }
 
+h1 {
+    margin: 150px auto 30px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.so-slide {
+    position: relative;
+    width:100%;
+    height:50%;
+    margin: 115px auto 0;
+}
+
+.so-slide .next,
+.so-slide .prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: red;
+    color: black;
+    transition: all 0.6s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.so-slide .next:hover,
+.so-slide .prev:hover {
+    opacity: 1;
+    color: red;
+    background-color: white;
+}
+
+.so-slide .prev {
+    left: -20px;
+    top:30%;
+    z-index:1000;
+}
+
+.so-slide .prev::before {
+    content: '<';
+}
+
+.so-slide .next {
+    right:40px;
+   top:30%;
+    z-index:1000;
+}
+
+.so-slide .next::before {
+    content: '>';
+}
+
+.so-slide>ul {
+    list-style: none;
+    position: relative;
+    width:70%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.so-slide>ul>li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 146px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.text--container{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.text--container *{
+    padding:1rem;
+}
+
+
+.text--container .head{
+    padding:0;
+    height:fit-content;
+    font-family: var(--font1);
+
+}
+
+.text--container .head--section {
+    background-color: red;
+}
+.text--container .footer--section {
+    background-color: rgb(158, 157, 158);
+    box-shadow: 0 0 5px  rgba(0, 0, 0, 0.417);
+}
+
+.text--container .event{
+    height:10rem;
+    padding: 0;
+    box-shadow: 0 0 13px 7px rgba(0, 0, 0, 0.417);
+}
+.text--container .event--date{
+    position: relative;
+    display: flex;
+}
+.text--container .event--date .text-date{
+    height:100%;
+    width:25%;
+    padding:0;
+    background-color: rgb(255, 255, 255);
+    
+}
+.text--container .event--date .title{
+    padding: 0;
+    height:100%;
+    width:75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 218, 218);
+}
+
+.text--container .event--date .text-date .date{
+    height:60%;
+    width: 100%;
+    padding: 0;
+  
+}
+
+.text--container .event--des{
+    height:40%;
+    background-color: whitesmoke;
+}
+
+.h-event{
+    color:white;
+    font-size: 2rem;
+    
+}
+
+.font1{
+    font-family: var(--font1);
+    color: red;
+    font-size: 4rem;
+    text-align: center;
+}
+.font2{
+    font-family: var(--font2);
+    font-size: 1.7rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.705);
+}
+.font3{
+    font-family: var(--font3);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
 #genvagar_wrapper{
     position: -webkit-sticky;
     position: sticky;
@@ -533,9 +702,7 @@ header{
 }
 
 #footer{
-    background-color:#ccc;
     min-height:400px;
-    border: 1px solid rgba(0, 0, 0,0.2);
 
 }
 .text{
@@ -583,7 +750,77 @@ header{
         line-height: 1.6;
         color: white;
 }
-.con-navigation-menu_heading {
+
+
+.kontaktinfo1{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-stretch: extra-condensed;
+    
+}
+.öppetider{
+    font-weight: bold;
+    width: 30%;
+    margin-top: 0;
+    margin-left: auto;
+    border-left: 2px solid var(--color-mono-lighter,#e5e5e5);
+    padding-left: calc(var(--base, 8px)*3);
+}
+.öppetider1{
+ 
+    
+
+}
+.avvikandeöppetider{
+    text-decoration: underline;
+    color: rgba(174, 11, 5, 1);
+}
+
+.kontaktinfor-container{
+    padding: 20px;
+}
+.meny-kontakt{
+display: flex;
+justify-content: flex-start;
+margin: 0;
+padding: 4.5rem 0;
+background-color: white;
+}
+.meny-kontakt1{
+    background-color:white;
+    border-radius: 15px;
+    border-style: 1px solid;
+    list-style: none;
+    width: 25%;
+    padding: 1em;
+    box-sizing: border-box;
+    position: relative;
+    border-spacing: 15px ;
+    border-collapse: separate;
+    padding: 40px 20px ;
+    margin: 0 10px;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0,0.2);
+}
+
+.öppetider-container{
+    display: flex;
+}
+.meny-klick a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.meny-kontakt2{
+    font-size: 1rem;
+    margin-top: .5rem!important;
+    line-height: 1.6;
+    color: black;
+    font-weight: bold;
+    
+}
+.meny-kontakt3{
     word-break: break-word;
     -webkit-box-direction: normal;
     font-style: normal;
@@ -608,3 +845,22 @@ a {
 
 
 
+.meny-klick {
+    border-top: 2px solid var(--color-mono-lighter,#e5e5e5);
+  
+}
+
+img{
+width: 20%;
+align-items: right;
+height: auto;
+float: right;
+display: inline-block;
+}
+
+.footerbild img {
+    float: left;
+    width: 30%;
+    height: auto;
+
+}
