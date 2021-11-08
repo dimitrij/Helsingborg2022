@@ -864,3 +864,40 @@ display: inline-block;
     height: auto;
 
 }
+
+/* ----------------------------- */
+ /* live-environment page style */
+ .main-bo {
+    display: flex;
+    align-items: center;
+ }
+
+ .side-bar {
+     font-size: 28px;
+     float: left;
+     width: 30%;
+ }
+
+ .bo-by-mil {
+     font-size: 42;
+     float: left;
+     width: 70%;
+}
+ 
+.bo-by-mil h1 {
+     color: red;
+    font-size: 32px;
+    margin:0%
+}
+
+.bo-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.bo-box-size {
+    margin-top: 35px;
+    margin-left: 15px;
+}
+
+ /* ----------------------------- */
