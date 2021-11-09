@@ -883,6 +883,17 @@ display: inline-block;
      float: left;
      width: 70%;
 }
+
+.bo-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-icon {
+    width: 10%;
+}
  
 .bo-by-mil h1 {
      color: red;
