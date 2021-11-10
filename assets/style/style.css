@@ -1412,5 +1412,71 @@ color: #771212;
     
     color: #771212;}
     
+
+
+
+/* Boxes */
+.submenu{
+    list-style: none;
+    width: 100%;
 }
 
+.submenu-item{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 10px;
+    transition: all 0.3s ;
+    cursor: pointer;
+    flex-wrap:wrap;
+}
+
+.submenu-item-text{
+    font-size:16px;
+}
+
+.submenu-item i{
+    margin-top: -5px;
+    margin-right:10px;
+    transition: all 0.5s ;
+}
+
+.submenu-item:hover i{
+    transform: rotate(-90deg);
+}
+.submenu-item:hover .submenu-item-text{
+    text-decoration: underline;
+}
+.submenu-item:hover .menu-drop{
+    display: block;
+}
+
+.menu-drop{
+    margin: 10px 0;
+    left: 100%;
+    display: none;
+    background: rgba(0, 0, 0,0.1);
+    width: 100%;
+    list-style: none;
+    transition: all 0.3s ;
+
+}
+
+.menu-drop >li{
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+
+.menu-drop >li a{
+    font-size: 16px;
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: black;
+
+}
+
+
+.content_detail{
+    padding: 15px;
+}
