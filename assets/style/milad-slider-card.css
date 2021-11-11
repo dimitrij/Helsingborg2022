@@ -23,9 +23,7 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    overflow-x: hidden;
-}
+
 
 h1 {
     margin: 150px auto 30px auto;
@@ -204,14 +202,14 @@ h2 {
 
 .font2 {
     font-family: var(--font2);
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
     color: rgba(0, 0, 0, 0.705);
 }
 
 .font3 {
     font-family: var(--font3);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
 }
