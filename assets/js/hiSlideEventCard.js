@@ -6,8 +6,8 @@ $(document).ready(function () {
     divEventCon.innerHTML = `
      <input type="date" id="dateEvent" name="dateEvent" data-date="" data-date-format="DD MM YYYY" value="2021-01-01" onchange="get_date_json()">
      <div class="so so-slide">
-     <div class="prev"></div>
-     <div class="next"></div>
+     <div class="prev2"></div>
+     <div class="next2"></div>
      <ul class="event-ul" id="event-ul"></ul>
      </div>
      `;
