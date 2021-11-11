@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Original+Surfer&display=swap');
 
@@ -45,8 +47,8 @@ h2 {
     align-items: center;
 }
 
-.so-slide .next,
-.so-slide .prev {
+.so-slide .next2,
+.so-slide .prev2 {
     position: absolute;
     top: 50%;
     width: 40px;
@@ -63,30 +65,33 @@ h2 {
     font-weight: bold;
 }
 
-.so-slide .next:hover,
-.so-slide .prev:hover {
+.so-slide .next2:hover:hover,
+.so-slide .prev2:hover {
     opacity: 1;
     color: rgb(255, 248, 248);
     background-color: rgb(144, 6, 6);
 }
 
-.so-slide .prev {
-    right: 20px;
+.so-slide .prev2 {
+   
+    
+    left: 670px;
     top: 60%;
     z-index: 1000;
+  
 }
 
-.so-slide .prev::before {
+.so-slide .prev2::before {
     content: '>';
 }
 
-.so-slide .next {
+.so-slide .next2 {
     left: 20px;
     top: 60%;
     z-index: 1000;
 }
 
-.so-slide .next::before {
+.so-slide .next2::before {
     content: '<';
 }
 
