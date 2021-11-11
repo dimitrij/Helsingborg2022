@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Original+Surfer&display=swap');
+
+
+:root {
+    --font1: 'Irish Grover', cursive;
+    --font2: 'Lobster', cursive;
+    --font3: 'Original Surfer', cursive;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 150px auto 30px auto;
+    text-align: center;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: var(--font2);
+}
+
+.so-slide {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.so-slide .next,
+.so-slide .prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -200px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(204, 15, 15, 0.931);
+    color: rgb(255, 253, 253);
+    transition: all 0.6s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.so-slide .next:hover,
+.so-slide .prev:hover {
+    opacity: 1;
+    color: rgb(255, 248, 248);
+    background-color: rgb(144, 6, 6);
+}
+
+.so-slide .prev {
+    right: 20px;
+    top: 60%;
+    z-index: 1000;
+}
+
+.so-slide .prev::before {
+    content: '>';
+}
+
+.so-slide .next {
+    left: 20px;
+    top: 60%;
+    z-index: 1000;
+}
+
+.so-slide .next::before {
+    content: '<';
+}
+
+.so-slide>ul {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.so-slide>ul>li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 350px;
+    top: 146px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.text--container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.text--container * {
+    padding: 1rem;
+}
+
+
+.text--container .head {
+    padding: 0;
+    height: fit-content;
+    font-family: var(--font1);
+
+}
+
+.text--container .head--section {
+    background-color: red;
+}
+
+.text--container .footer--section {
+    background-color: rgb(158, 157, 158);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.417);
+}
+
+.text--container .event {
+    height: 10rem;
+    padding: 0;
+    box-shadow: 0 0 13px 7px rgba(0, 0, 0, 0.417);
+}
+
+.text--container .event--date {
+    position: relative;
+    display: flex;
+}
+
+.text--container .event--date .text-date {
+    height: 100%;
+    width: 25%;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.text--container .event--date .title {
+    padding: 0;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 218, 218);
+}
+
+.text--container .event--date .text-date .date {
+    height: 60%;
+    width: 100%;
+    padding: 0;
+
+}
+
+.text--container .event--des {
+    height: 40%;
+    background-color: whitesmoke;
+}
+
+.h-event {
+    color: white;
+    font-size: 2rem;
+
+}
+
+.font1 {
+    font-family: var(--font1);
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.font2 {
+    font-family: var(--font2);
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+.font3 {
+    font-family: var(--font3);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+#event {
+
+    position: relative;
+    min-width: 65%;
+
+}
+
+#dateEvent {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    color: rgb(7, 0, 0);
+    margin-top: -10px;
+    z-index: 5000;
+
+}
+
+#dateEvent:before {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    content: attr(data-date);
+    display: inline-block;
+    color: black;
+}
+
+#dateEvent::-webkit-datetime-edit,
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+    display: inline-block;
+}
+
+#dateEvent::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    color: black;
+    opacity: 1;
+}
+
+@media (max-width:820px) {
+    #event {
+
+        min-width: 100%;
+
+    }
+
+    .so-slide .prev {
+        right: 150px;
+        top: 550px
+    }
+
+    .so-slide .next {
+        left: 150px;
+        top: 550px
+    }
+
+}
