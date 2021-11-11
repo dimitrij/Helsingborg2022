@@ -251,21 +251,3 @@ input::-webkit-clear-button {
     opacity: 1;
 }
 
-@media (max-width:820px) {
-    #event {
-
-        min-width: 100%;
-
-    }
-
-    .so-slide .prev {
-        right: 150px;
-        top: 550px
-    }
-
-    .so-slide .next {
-        left: 150px;
-        top: 550px
-    }
-
-}
