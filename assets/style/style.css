@@ -915,9 +915,12 @@ display: inline-block;
 }
 
 .bo-box-size {
-    margin: 25px;
-    width: 170px;
-    height: 400px;
+    margin: 15px;
+    width: 250px;
+    height: 500px;
+    background: azure;
+    border-radius: 6%;
+    box-shadow: 3px 5px 15px #726d6d;
     overflow: hidden;
     transition: transform .2s;
     
