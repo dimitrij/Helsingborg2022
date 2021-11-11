@@ -1,17 +1,15 @@
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
-
-const helsingborgMain = $('#helsingborg');
-const acceptCookieContainer = $('#accept-cookie')
-const frontPage = $('#front-page')
-const mainPage = $('#main')
-const logo = $('#logo')
-const acceptBtn = $('.btn-accept')
-const policyBtn = $('.btn-policy')
-const header = $('header')
-const COOKIE_ACCEPTED = "cookie_accepted"
-let acceptedCookie = localStorage.getItem(COOKIE_ACCEPTED) || ""
-
+let logo=document.querySelector('#logo')
+//const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+const helsingborgMain = document.querySelector('#helsingborg');
+const acceptCookieContainer = document.querySelector('#accept-cookie');
+const frontPage =document.querySelector('#front-page');
+const mainPage = document.querySelector('#main');
+//const logo = $('#logo');
+const acceptBtn = document.querySelector('.btn-accept');
+const policyBtn = document.querySelector('.btn-policy');
+const COOKIE_ACCEPTED = "cookie_accepted";
+let acceptedCookie = localStorage.getItem(COOKIE_ACCEPTED) || " ";
 
 
 //Click on logo , show up accept cookie
