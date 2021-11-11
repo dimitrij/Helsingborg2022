@@ -1,53 +1,49 @@
+  [
+    {
+        "eveDate":"2021-11-11",
+        "title": " Torsdagsbridge – träffpunkt Rydebäck",
+        "desc":" Mötesplats Rydebäck" 
+       
+    
+    },
+    {
+        "eveDate":"2021-11-12",
+        "title": "Balansera Mera Promenad – träffpunkt Rydebäck",
+        "desc":"Promenad med balansträning vid befintliga redskap "
+    },
 
-
-[
+     
     {
-    
-       "eveDate":"2021-01-27",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
-    },
-    
-    {
-        "eveDate":"2021-01-25",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
-    },
-    
-    {
-        "eveDate":"2021-01-24",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
-    },
-    {
-        "eveDate":"2021-01-23",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
-    },{
-        "eveDate":"2020-01-27",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
-    },
-    {
-        "eveDate":"2020-01-20",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
+        "eveDate":"2021-11-13",
+        "title": "Torsdagsbridge på träffpunkt Tågaborg",
+        "desc":"  Du måste föranmäla dig till aktiviteten för att   erhålla en plats. Begränsat antal deltagare per aktivitet"
     }, 
+       
     {
-        "eveDate":"2020-01-12",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
-    }, 
-    {
-        "eveDate":"2019-01-27",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
+        "eveDate":"2021-11-14",
+        "title": "Stick-café Träffpunkt Adolfsberg",
+        "desc":"Stick-café – vi stickar till oss själva eller till behövande barn. Fika FÖR ALLAS BÄSTA"
+    },
+    { 
+        "eveDate":"2021-11-15",
+        "title": "Aktiv med färg på träffpunkt Söder",
+        "desc":"Aktiv med färg innebär att vi gör collage, målar valfria mor ledning av konstnärinnan Carina Stjernfeldt. För mer information kontakta träffpunkten."
     },
     {
-        "eveDate":"2018-01-20",
-        "title": "Big Shoulder Long Blazer",
-        "desc":"Kvinligt Blazer"
+        "eveDate":"2021-11-16",
+        "title": "Workshop: Ritsagor och boktips för vuxna",
+        "desc":"Lär dig inspirera barn till läsning genom smarta roliga och enkla tips Denna gång går vi igenom  aga"
+    },
+    { "eveDate":"2021-11-17",
+        "title": "Musikproducent / Studio",
+        "desc":"Är du intresserad av att producera musik, mixa och spela in? Vi lär dig allt från det tekniska till hur man bygger upp en låt och arrangerar. Gillar du Rock, Pop, Hip hop eller någon annan musikstil? Vi hjälper dig att komma igång och lära dig mer om de olika verktygen och knepen i studion. Du bör vara musikintresserad, syssla med någon form av musik, göra musik eller spela något instrument. Ingen utrustning krävs. Kurserna är i Tryckeriets fullt utrustade inspelningsstudio Aktiviteten är gratis"
+    },
+    {
+        "eveDate":"2021-11-18",
+        "title": " Spelhörnan – En aktivitet för dig som gillar spel på olika sätt",
+        "desc":"Aktiv med färg innebär att vi gör collage, målar valfria motiv med akryl, skriver olika stilar som till exempel kalligrafi samt fluid art. Allt under ledning av konstnärinnan Carina Stjernfeldt. För mer information kontakta träffpunkten."
+       
     }
-
-
-]
+  
+]   
+    {
