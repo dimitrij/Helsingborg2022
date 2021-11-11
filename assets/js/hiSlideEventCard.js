@@ -40,10 +40,10 @@ $(document).ready(function () {
 
             var $lis = $ele.find('li');
             var timer = null;
-            $ele.find('.next').on('click', function () {
+            $ele.find('.next2').on('click', function () {
                 next();
             });
-            $ele.find('.prev').on('click', function () {
+            $ele.find('.prev2').on('click', function () {
                 states.push(states.shift());
                 move();
             });
