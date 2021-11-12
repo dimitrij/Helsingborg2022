@@ -930,14 +930,16 @@ display: inline-block;
     transform: scale(1.3);
 }
 
-.bo-box h2 {
+.bo-box h2  {
     color: black;
     margin-bottom: 25px;
+    margin-left: 20px;
 }
 
 .bo-box-size p {
     color: black;
     height: 300px;
+    margin-left: 20px;
 }
 
 .bo-box-size img {
